@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(11, 11, 44);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            margin: auto;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(7, 7, 82);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(106, 106, 189);
+            font-size: 1.0rem;
+        }
+
+        main hr {
+            border: 0;
+            background: #9c97f1;
+            height: 1.2px;
+            margin: 40px 84px;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 50px 0;
+        }
+
+        .firstSection>div {
+            width: 30%;
+        }
+
+        .leftSection {
+            font-size: 1.8rem;
+        }
+
+        .leftSection .btn{
+            margin: 50px 0 ;
+            color: white;
+            padding: 15px;
+            background: rgb(39, 39, 107);
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointer;
+
+        }
+
+
+        .rightSection img {
+            width: 80%;
+            /* mix-blend-mode:multiply; */
+        }
+
+        .purple {
+            color: rgb(150, 64, 231);
+        }
+
+        .text-gray {
+            color: grey;
+        }
+
+        #element {
+            color: rgb(150, 64, 231);
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        .secondSection h1 {
+            font-size: 1.5rem;
+
+        }
+
+        .secondSection .box {
+            background-color: white;
+            width: 100%;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+
+        .secondSection .vertical {
+            height: 80px;
+            width: 1px;
+            background-color: white;
+            margin: 0 110px;
+        }
+
+        .image-top{
+            width: 40px;
+            position: relative;
+            top: -45px;
+            left: -15px;
+        }
+        .vertical-title{
+            position: relative;
+            top: 50px;
+            width: 150px;
+            font-size: 14px;
+            /* justify-content: center; */
+        }
+
+        .vertical-desc{
+            position: relative;
+            top: 55px;
+            width: 150px;
+            color: grey;
+            font-size: 9px;
+        }
+        footer{
+            background-color: rgb(34, 20, 79);
+            
+        }
+        .footer{
+            display: flex;
+            padding: 23px 120px;
+            justify-content: left;
+        }
+        .footer ul{
+            display: flex;
+            list-style: none;
+            
+        }
+        .footer-second li{
+            padding: 50px 80px;
+        }
+        .footer-second li a{
+            color:rgb(181, 147, 213);
+        }
+        .footer div{
+            width: 240px;
+        }
+        footer .footer-rights{
+            color: grey;
+            text-align: center;
+            padding: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Sanya's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">Hi, My name is <span class="purple">Sanya</span>
+                <div>and I am a passionate</div>
+                <span id="element"></span>
+                <div class="button">
+                    <button class="btn">Resume</button>
+                </div>
+
+            </div>
+            <div class="rightSection">
+                <img src="pg.png" alt="">
+            </div>
+        </section>
+
+
+        <hr>
+
+
+        <section class="secondSection">
+            <span class="text-gray">What I have done so far</span>
+            <h1>Past Experience</h1>
+
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="html-logo.png" alt="">
+                    <div class="vertical-title">
+                        HTML Developer (2010-2012)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ut provident officia quod
+                        explicabo mollitia, tenetur vitae, velit molestiae, nihil minima corrupti et. Natus qui quaerat
+                        possimus. Animi, totam necessitatibus!
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="nodejs-logo.jpeg" alt="">
+                    <div class="vertical-title">
+                        Node.js Developer (2010-2012)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ut provident officia quod
+                        explicabo mollitia, tenetur vitae, velit molestiae, nihil minima corrupti et. Natus qui quaerat
+                        possimus. Animi, totam necessitatibus!
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="html-logo.png" alt="">
+                    <div class="vertical-title">
+                        HTML Developer (2010-2012)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ut provident officia quod
+                        explicabo mollitia, tenetur vitae, velit molestiae, nihil minima corrupti et. Natus qui quaerat
+                        possimus. Animi, totam necessitatibus!
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="developer.png" alt="">
+                    <div class="vertical-title">
+                        HTML Developer (2010-2012)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ut provident officia quod
+                        explicabo mollitia, tenetur vitae, velit molestiae, nihil minima corrupti et. Natus qui quaerat
+                        possimus. Animi, totam necessitatibus!
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                Sanya's Developer Portfolio
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/sanya-patel-94a995228/" target="_blank">LinkedIn</a></li>
+                    <li><a href="https://github.com/Sanya-Patel" target="_blank">GitHub</a></li>
+                    <li><a href="https://leetcode.com/sanya1620/" target="_blank">LeetCode</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-rights">
+            <b>Copyright &#169; www.sanyasportfolio.com | All rights Reserved</b>
+        </div>
+    </footer>
+
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer','Programmer'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
